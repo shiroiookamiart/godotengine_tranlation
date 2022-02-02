@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Es" type="Button" parent="."]
+margin_left = 62.0
+margin_top = 174.0
+margin_right = 222.0
+margin_bottom = 290.0
+text = "Es"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="En" type="Button" parent="."]
+margin_left = 60.0
+margin_top = 320.0
+margin_right = 225.0
+margin_bottom = 430.0
+text = "En"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 338.0
+margin_top = 146.0
+margin_right = 742.0
+margin_bottom = 432.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Es" to="." method="_on_Es_pressed"]
+[connection signal="pressed" from="En" to="." method="_on_En_pressed"]
